@@ -1,0 +1,619 @@
+@font-face {
+    font-family: 'raleway';
+    src: url(../polices/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(../polices/Raleway-VariableFont_wght.ttf);
+    src: url(../polices/Raleway-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    font-family: 'raleway', sans-serif;
+    color: black; 
+
+
+}
+
+/* HEADER */
+
+/*marges header*/
+header {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+nav img {
+    height: 45px;
+}
+
+/*placement des éléments du header*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+#h1 {
+    font-size: 23px;
+}
+
+nav li {
+    margin: 20px 0;
+}
+
+/*enlever les effets de styles de base des liens*/
+.navlink {
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+    padding: 32px 20px 10px 20px;
+}
+
+/*barre bleue au survol*/
+.navlink:hover {
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
+}
+
+
+/* SECTION 1*/
+
+/*marges section 1*/
+#recherche {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+h1 {
+    font-size: large;
+}
+
+/*icone du plan*/
+
+#plan {
+    display: flex;
+}
+
+
+
+
+/*icone du plan à gauche de la barre de recherche, style, placement*/
+#lieu {
+    height: 35px;
+    padding: 6px 10px;
+    border: 3px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 12px 0px 0px 12px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*champ de recherche "marseille, france"*/
+div form {
+    height: 35px;
+    padding: 6px 0px;
+    border: 3px solid#F2F2F2;
+    display: flex;
+    align-items: center;
+    width: 210px;
+
+}
+
+
+/*champs de recherche cadre noir au clic*/
+#marseille:focus {
+    height: 43px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+#marseille {
+    min-width: 210px;
+
+}
+
+/*champ de recherche "marseille, france"*/
+div input {
+    border: 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*bouton "rechercher" style, placement*/
+#button {
+    height: 35px;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: white;
+    border: 3px solid #0065fc;
+    border-radius: 0px 12px 12px 0px;
+    background-color: #0065fc;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*bouton de recherche pour le responsive invisible en version desktop*/
+#loupe {
+    color: transparent;
+
+}
+
+/*Filtres*/
+
+/*placement des filtres*/
+#divfiltre {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#filtres {
+    font-weight: bold;
+    font-size: large;
+
+
+}
+
+/*cadre et police des filtre*/
+.filtre {
+
+    border: 3px solid #F2F2F2;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/*enlever style de base des a + espace entre les filtres*/
+#divfiltre a {
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+    padding: 10px 20px;
+}
+
+/*effets filtres au survol*/
+.filtre:hover {
+    border: 3px solid #deebff;
+    box-shadow: 4px 4px 4px #deebff;
+}
+
+/*cadre et style des icones des filtres*/
+.iconefiltre {
+    max-height: 12px;
+    padding: 9px 12px;
+    color: #0065fc;
+    border: 3px solid #deebff;
+    background-color: #deebff;
+    border-radius: 25PX;
+    position: relative;
+    right: 12px;
+}
+
+/*informations*/
+
+/*icone "i" sous les filtres*/
+#iconeinformation {
+    color: #0065fc;
+    border: 3px solid #F2F2F2;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin-right: 15px;
+}
+
+/*placement de l'icone "i" par rapport à la phrase qui suit*/
+#information {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+
+}
+
+
+/*SECTION 2 / HEBERGEMENTS*/
+
+/*placement des blocks "hebergements à marseille" et "les plus populaires"*/
+#hebergements {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#hebergementhaut {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+/*couleur de fond de hebergementsmarseille et de populaires + marges des blocks*/
+
+#hebergementsmarseille {
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    width: 63%;
+}
+
+#populaires {
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    width: 33%;
+    margin-left: 3%;
+}
+
+/*format carte hebergementsmarseille*/
+
+.carte {
+    width: 26%;
+    height: 220px;
+    margin: 2% 3%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px 4px #e0dfdf;
+}
+
+/*effets cartes au survol*/
+.carte:hover {
+
+    box-shadow: 4px 4px 4px #deebff;
+}
+
+.carte2:hover {
+
+    box-shadow: 4px 4px 4px #deebff;
+}
+
+
+/*format image dans carte hebergementsmarseille*/
+.imagecartehebergement {
+    width: 95%;
+    height: 55%;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    display: block;
+    margin: 2.5% 2.5% 0% 2.5%;
+    object-fit: cover;
+}
+
+/*enlever le style des liens*/
+#hebergementhaut a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#populaires a {
+    text-decoration: none;
+    color: black;
+}
+
+#afficherplus a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*placement du titre de carte hebergementsmarseille*/
+.titrecartehebergement {
+    margin: 8px;
+    font-size: 15px;
+}
+
+/*placement du prix de carte hebergementsmarseille*/
+.prixhebergement {
+    margin: 8px;
+}
+
+/*placement des etoiles de carte hebergementsmarseille*/
+.etoileshebergement {
+    margin: 8px;
+}
+
+
+/*couleur des etoiles*/
+
+.etoilebleue {
+    color: #0065fc;
+}
+
+.etoilegrise {
+    color: #cfccccc7;
+}
+
+#titreh2hebergement {
+    padding-left: 15px;
+}
+
+/*les plus populaires*/
+
+/*titre h2 les plus populaires rapport à son étoile*/
+#titreh2populaire {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+
+}
+
+/*format carte populaire*/
+.carte2 {
+    width: 85%;
+    height: 154px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 40px;
+    box-shadow: 4px 4px 4px #e0dfdf;
+
+}
+
+/*format et placement image dans sa carte pour les plus populaires*/
+.imagecartepopulaire {
+    min-width: 40%;
+    max-width: 40%;
+    height: 90%;
+    padding: 2%;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+}
+
+/*marges autour du texte de prix*/
+.prixpopulaire {
+    margin-top: 0%;
+    margin-left: 1%;
+}
+
+/*marge sous le titre*/
+.titrecartepopulaire {
+    margin-bottom: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+
+
+/*style du prix de carte en em*/
+.prixpopulaire em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*placement du titre hebergements à marseille*/
+#titreh2hebergement {
+    margin: 40px 0px 0px 40px;
+}
+
+/*placement du texte afficher plus*/
+#afficherplus {
+    margin: 60px 0px 0px 40px;
+}
+
+/*marges etoiles populaires*/
+.etoilespopulaires {
+    margin-top: 40px;
+    margin-left: 1%;
+}
+
+/*SECTION 3 ACTIVITES A MARSEILLE*/
+
+/*marges section 3*/
+#activitesamarseille {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#activitesmarseille {
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: space-between;
+
+
+}
+
+
+/*format div dans activités à marseille*/
+.divactivitesmarseille {
+    width: 48%;
+    height: 400px;
+}
+
+/*div activités à marseille pour la version tablette max widht 992px*/
+#activité1tablette {
+    display: flex;
+    width: 49%;
+    justify-content: space-between;
+
+}
+
+#activité2tablette {
+    display: flex;
+    width: 49%;
+    justify-content: space-between;
+}
+
+
+/*format et stylecartes activités à marseille*/
+.activite1 {
+    width: 48%;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #e0dfdf;
+}
+
+.activite2 {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #e0dfdf;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.activite3 {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #e0dfdf;
+    display: flex;
+    flex-direction: column;
+}
+
+.activite4 {
+    width: 100%;
+    height: 175px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #e0dfdf;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+/*effets cartes au survol*/
+.activite1:hover {
+
+    box-shadow: 5px 5px 5px #deebff;
+}
+
+.activite2:hover {
+
+    box-shadow: 5px 5px 5px #deebff;
+}
+
+.activite3:hover {
+
+    box-shadow: 5px 5px 5px #deebff;
+}
+
+.activite4:hover {
+
+    box-shadow: 5px 5px 5px #deebff;
+}
+
+/*format photo dans carte activités à marseille*/
+.photoactivite1 {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.photoactivite2 {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.photoactivite3 {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.photoactivite4 {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+
+}
+
+/*enlever le style des liens dans activités à Marseille*/
+#activitesamarseille a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Padding h2 activités à marseille*/
+#titreactivitesmarseille {
+    padding-top: 2%;
+}
+
+/*placement h3 carte activités à marseille*/
+.activite1titre {
+    margin-left: 7%;
+    font-size: 17px
+}
+
+.activite2titre {
+    margin-left: 7%;
+    margin-top: 5%;
+    font-size: 17px
+}
+
+.activite3titre {
+    margin-left: 7%;
+    margin-top: 3%;
+    font-size: 17px
+}
+
+
+
+/*FOOTER*/
+
+/*enlever le style des liens + taille et marges*/
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+
+}
+
+/*enlever le style des listes et le padding gauche*/
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/*couleur de fond du footer + hauteur*/
+footer {
+
+    background-color: #F2F2F2;
+    height: 10%;
+    padding-bottom: 2%;
+}
+
+/*positionnement des elements du footer*/
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 3%;
+    padding-top: 2%;
+}
+
+/*marge entre les li du footer*/
+footer li {
+    margin-bottom: 12px;
+}
